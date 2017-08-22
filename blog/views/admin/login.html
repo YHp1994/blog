@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="/public/css/reset.css" />
+    <link rel="stylesheet" href="/public/css/login.css" />
+    <script type="text/javascript" src="/public/js/jquery-1.11.3.js" ></script>
+    <script type="text/javascript" src="/public/js/login.js" ></script>
+</head>
+<body>
+<div class="main clear">
+    <div class="comment">
+        <img src="/public/images/icon/logo-black.png"  style="margin-left: -6px;" />
+        <h3>让人人爱上在线学习 !</h3>
+
+    </div>
+    <div class="register">
+        <ul class="login-tab clear">
+            <li class="login-title cur">登录</li>
+        </ul>
+        <div class="login-view tab-view cur">
+            <form action="javascript:void(0)" method="post" onsubmit="return false;" id="loginForm">
+                <div class="form-item">
+                    <i class="login-phone"></i><input type="text" class="login-user" name="memberName" id="memberName" value="" placeholder="请输入手机号" maxlength="11" onkeyup="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'')}else{this.value=this.value.replace(/\D/g,'')}" onafterpaste="if(this.value.length==1){this.value=this.value.replace(/[^1-9]/g,'0')}else{this.value=this.value.replace(/\D/g,'')}" />
+                    <!--[if  lt IE 10]><span class="placeholder-tip">请输入手机号</span><![endif]-->
+                    <p class="login-user-wrong">手机号码不正确</p>
+                </div>
+                <div class="form-item">
+                    <i class="login-lock"></i><input type="password" class="login-psd" name="password" id="password" value="" placeholder="密码(6~12位)" maxlength="12" autocomplete="new-password"/>
+                    <!--[if  lt IE 10]><span class="placeholder-tip">密码(6~12位)</span><![endif]-->
+                    <p class="login-psd-wrong">密码输入错误</p>
+                </div>
+                <div class="form-des">
+                    <p class="login-rember"><i></i><span>下次自动登录</span> </p>
+                    <a href="" target="_blank"  class="login-forget">忘记密码？</a>
+                </div>
+                <div class="form-btn">
+                    <input type="submit" value="登录" class="login-btn" />
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,296 @@
+body{
+	background:#f5f5f5 url(../images/icon/login-bg.png);
+}
+.main{
+	width: 840px;
+	height: 352px;
+	margin: 150px auto 0;
+	background-color: #ffffff;
+	padding: 69px 0;
+	-moz-box-shadow:0px 6px 24px rgba(0,0,0,0.08);
+	-webkit-box-shadow:0px 6px 24px rgba(0,0,0,0.08);
+	box-shadow:0px 6px 24px rgba(0,0,0,0.08);
+}
+/*左侧部分*/
+.comment{
+	float: left;
+	width: 292px;
+	height: 97px;
+	border-right: 2px solid #F5F5F5;
+	padding: 125px 0 130px;
+	text-align: center;
+}
+.comment h3{
+	color: #303030;
+	font-size: 16px;
+	padding-top: 12px;
+}
+/*右侧部分*/
+.register{
+	float: left;
+	padding: 0 92px;
+	text-align: center;
+	position: relative;
+}
+.register .login-tab{
+	font-size: 20px;
+	color: #666666;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+.register .login-tab li{
+	float: left;
+	border-bottom: 2px solid transparent;
+	padding:12px 2px 8px;
+	cursor: pointer;
+	
+}
+.register .login-tab li.login-title{
+	margin-right: 78px;
+}
+.register .login-tab li.cur{
+	color: #f28820;
+	border-bottom: 2px solid #f28820;
+}
+
+/*登陆部分*/
+.login-view{
+	display: none;
+}
+.login-view.cur{
+	display: block;
+}
+.login-view .form-item{
+	position: relative;
+	height: 78px;
+	z-index: 1;
+}
+.login-view .form-item p{
+	font-size: 12px;
+	color: #ff4f4b;
+	text-align: left;
+	padding-left: 28px;
+	padding-top: 2px;
+	display: none;
+}
+.login-view .form-item span.placeholder-tip{
+	position: absolute;
+	left: 53px;
+	top: 15px;
+	font-size: 16px;
+	color: #B5B5B5;
+	z-index: -1;
+}
+.login-view .login-user,.login-view .login-psd{
+	width: 306px;
+	height: 20px;
+	line-height: 22px;
+	border: 1px solid #e6e6e6;
+	outline: none;
+	border-radius: 6px;
+	padding: 13px 0 13px 52px;
+	font-size: 16px;
+	color: #666666;
+	background-color: transparent;
+}
+.login-view .login-user:hover,.login-view .login-psd:hover{
+	border: 1px solid #cfcfcf;
+}
+.login-view .login-user.focus,.login-view .login-psd.focus{
+	border: 1px solid #F28820;
+}
+.login-view i{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: absolute;
+	background: url(../images/icon/login-icon.png) no-repeat;
+	left: 25px;
+	top: 16px;
+}
+.login-view i.login-phone{
+	background-position: 0 0;
+}
+.login-view i.login-lock{
+	background-position: 0 -18px;
+}
+.login-view .login-rember i{
+	position: static;
+	background-position: 0 -72px;
+	margin-bottom: -4px;
+	margin-right: 4px;
+}
+.login-view .login-rember-ok i{
+	background-position: 0 -54px;
+}
+::-webkit-input-placeholder { /* WebKit browsers */ 
+color: #b5b5b5; 
+} 
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+color: #b5b5b5; 
+} 
+::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+color: #b5b5b5; 
+} 
+:-ms-input-placeholder { /* Internet Explorer 10+ */ 
+color: #b5b5b5; 
+} 
+.login-view .form-des{
+	text-align: left;
+	color: #c5c5c5;
+	font-size: 14px;
+}
+.login-view .form-des p{
+	display: inline-block;
+	cursor: pointer;
+}
+.login-view .form-des a{
+	float: right;
+	color: #c5c5c5;
+	font-size: 14px;
+}
+.login-view .form-des a:hover{
+	text-decoration: underline;
+	color: #666666;
+}
+.login-view .login-btn {
+	width: 360px;
+	height: 48px;
+	display: block;
+	margin: 35px auto 0px;
+	border: 0 none;
+	outline: none;
+	background: url(../images/icon/register-btn.png) no-repeat 0 -2px;
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.login-view .login-btn:hover {
+	background: url(../images/icon/register-btn.png) no-repeat 0 -52px;
+}
+
+.login-view .login-btn:active {
+	background: url(../images/icon/register-btn.png) no-repeat 0 -102px;
+}
+
+/*注册部分*/
+.register-view{
+	display: none;
+}
+.register-view.cur{
+	display: block;
+}
+.register-view .form-item{
+	position: relative;
+	height: 78px;
+	z-index: 1;
+	text-align: left;
+}
+.register-view .form-item p{
+	font-size: 12px;
+	color: #ff4f4b;
+	text-align: left;
+	padding-left: 28px;
+	padding-top: 2px;
+	display: none;
+}
+.register-view .form-item span.placeholder-tip{
+	position: absolute;
+	left: 53px;
+	top: 15px;
+	font-size: 16px;
+	color: #B5B5B5;
+	z-index: -1;
+}
+.register-view .register-user,.register-view .register-safe,.register-view .register-psd{
+	width: 306px;
+	height: 20px;
+	line-height: 22px;
+	border: 1px solid #e6e6e6;
+	outline: none;
+	border-radius: 6px;
+	padding: 13px 0 13px 52px;
+	font-size: 16px;
+	color: #666666;
+	background-color: transparent;
+}
+.register-view .register-safe{
+	width: 154px;
+	margin-right: 30px;
+}
+.register-view .register-user:hover,.register-view .register-psd:hover,.register-view .register-safe:hover{
+	border: 1px solid #cfcfcf;
+}
+.register-view .register-user.focus,.register-view .register-safe.focus,.register-view .register-psd.focus{
+	border: 1px solid #F28820;
+}
+.register-view i{
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	position: absolute;
+	background: url(../images/icon/login-icon.png) no-repeat;
+	left: 25px;
+	top: 16px;
+}
+.register-view i.register-phone{
+	background-position: 0 0;
+}
+.register-view i.register-lock{
+	background-position: 0 -18px;
+}
+.register-view i.register-safeicon{
+	background-position: 0 -36px;
+}
+.register-view .register-get{
+	width: 120px;
+	height: 46px;
+	border: 1px solid #f28820;
+	float: right;
+	border-radius: 6px;
+	line-height: 46px;
+	text-align: center;
+	color: #F28820;
+	cursor: pointer;
+}
+.register-view .register-get:hover{
+	background-color: #F28820;
+	color: #FFFFFF;
+}
+/*.register-view .register-get:active{
+	background-color: #FF6600;
+	color: #FFFFFF;
+}*/
+.register-view .register-countdown{
+	width: 122px;
+	height: 48px;
+	background: #CFCFCF;
+	float: right;
+	border-radius: 6px;
+	line-height: 48px;
+	text-align: center;
+	color: #FFFFFF;
+}
+.register-view .register-btn {
+	width: 360px;
+	height: 48px;
+	display: block;
+	margin: 0px auto;
+	border: 0 none;
+	outline: none;
+	background: url(../images/icon/register-btn.png) no-repeat 0 -2px;
+	font-size: 20px;
+	color: #FFFFFF;
+	line-height: 40px;
+	cursor: pointer;
+}
+
+.register-view .register-btn:hover {
+	background: url(../images/icon/register-btn.png) no-repeat 0 -52px;
+}
+
+.register-view .register-btn:active {
+	background: url(../images/icon/register-btn.png) no-repeat 0 -102px;
+}
